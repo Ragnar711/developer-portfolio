@@ -1,20 +1,20 @@
 export const educations = [
-  {
-    id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
-  },
-  {
-    id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
-  },
-  {
-    id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
-  }
-]
+    {
+        id: 1,
+        title: 'Engineering Degree in Mechatronics Engineering',
+        duration: '2022 - Present',
+        institution: 'École Polytechnique Internationale Privée de Tunis',
+    },
+    {
+        id: 2,
+        title: 'Bachelor of Mechatronics Engineering',
+        duration: '2019 - 2022',
+        institution: 'Higher Institute of Technological Studies of Radès',
+    },
+    {
+        id: 3,
+        title: 'High School Diploma',
+        duration: '2018',
+        institution: 'Carthage Présidence High School',
+    },
+];

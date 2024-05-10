@@ -75,7 +75,7 @@ function ContactWithCaptcha() {
   return (
     <div className="">
       <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
-        Contact with me
+        Get in touch
       </p>
       <div className="max-w-3xl text-white rounded-lg border border-[#464c6a] p-3 lg:p-5">
         <p className="text-sm text-[#d3d8e8]">
@@ -83,10 +83,11 @@ function ContactWithCaptcha() {
         </p>
         <div className="mt-6 flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <label className="text-base">Your Name: </label>
+            <label className="text-base" htmlFor='name'>Your Name: </label>
             <input
               className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
               type="text"
+              id='name'
               maxLength="100"
               required={true}
               onChange={(e) => setInput({ ...input, name: e.target.value })}
@@ -96,10 +97,11 @@ function ContactWithCaptcha() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-base">Your Email: </label>
+            <label className="text-base" htmlFor='email'>Your Email: </label>
             <input
               className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
               type="email"
+              id='email'
               maxLength="100"
               required={true}
               value={input.email}
@@ -115,7 +117,7 @@ function ContactWithCaptcha() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-base">Your Message: </label>
+            <label className="text-base" htmlFor='message'>Your Message: </label>
             <textarea
               className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
               maxLength="500"
@@ -125,6 +127,7 @@ function ContactWithCaptcha() {
               onBlur={checkRequired}
               rows="4"
               value={input.message}
+              id='message'
             />
           </div>
           <ReCAPTCHA
@@ -139,7 +142,6 @@ function ContactWithCaptcha() {
             }
             <button
               className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
-              role="button"
               onClick={handleSendMail}
             >
               <span>Send Message</span>

@@ -61,6 +61,21 @@ function ProjectCard({ project }) {
             <span className="text-cyan-400">{' ' + project.description}</span>
             <span className="text-gray-400">,</span>
           </div>
+          {project.demo && <div>
+            <span className="ml-4 lg:ml-8 mr-2 text-white">demo:</span>
+            <span className="text-[#16f2b3]">{' ' + project.demo}</span>
+            <span className="text-gray-400">,</span>
+          </div>}
+          <div>
+            <span className="ml-4 lg:ml-8 mr-2 text-white">code:</span>
+            <span className="text-[#16f2b3]">{' ' + project.code}</span>
+            <span className="text-gray-400">,</span>
+          </div>
+          {project.note !== "" ? (<div>
+            <span className="ml-4 lg:ml-8 mr-2 text-white">note:</span>
+            <span className="text-[#16f2b3]">{' ' + project.note}</span>
+            <span className="text-gray-400">,</span>
+          </div>): null}
           <div><span className="text-gray-400">{`};`}</span></div>
         </code>
       </div>
